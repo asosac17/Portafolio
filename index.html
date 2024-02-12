@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.svg" alt="Encriptador de texto" class="logo">
+    </header>
+
+        <main class="contenedor-principal">
+            <section class="seccion1">
+                <div class="contenedor-caja-texto">
+                    <textarea placeholder="Ingrese el texto aqui" class="caja-texto"></textarea>
+                </div>
+                <div class="contenedor-alerta">
+                    <div class="alerta">
+                        <img src="img/alerta.svg" alt="Alerta">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                </div>
+                <div class="contenedor-botones">
+                    <div class="botones">
+                        <div class="div-btn-encriptar">
+                            <input type="button" class="btn-encriptar" value="Encriptar">
+                        </div>
+                        
+                        <div class="div-btn-desencriptar">
+                            <input type="button" class="btn-desencriptar" value="Desencriptar">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion2">
+                <div class="contenedor-mono">
+                    <img src="img/Muñeco.svg" alt="Muñeco">
+                </div>
+                <div class="contenedor-parrafo">
+                    <h3>Ningun mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                
+                <div class="contenedor-resultado ocultar">
+                    <p class="texto-resultado"></p>
+                </div>
+
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar ocultar" value="Copiar">
+                </div>
+            </section>
+        </main>
+    <script src="app.js"></script>
+</body> 
+</html>
